@@ -1,7 +1,7 @@
 # JOONFLIX
 
 TMDB API 기반 영화 탐색 웹 애플리케이션입니다.  
-검색, 페이지네이션, 무한 스크롤을 한 화면 흐름 안에서 안정적으로 처리하는 데 집중한 1인 프로젝트입니다.
+검색, 페이지네이션, 무한 스크롤을 한 화면 흐름 안에서 안정적으로 처리하는 데 집중한 1인 프론트엔드 프로젝트입니다.
 
 ## 링크
 
@@ -37,8 +37,8 @@ TMDB API 기반 영화 탐색 웹 애플리케이션입니다.
 ## 기술 선택 이유
 
 - React + TypeScript: 컴포넌트 단위 개발과 타입 안정성 확보
-- Zustand: 전역 상태 관리에 필요한 코드량 최소화
-- Axios: API 공통 설정(`baseURL`, `headers`, `params`) 관리
+- Zustand: 전역 상태 관리 시 필요한 보일러플레이트 최소화
+- Axios: API 공통 설정(`baseURL`, `headers`, `params`)을 한 곳에서 관리
 - Intersection Observer: 스크롤 이벤트보다 효율적인 무한 스크롤 구현
 
 ## 폴더 구조
@@ -63,7 +63,7 @@ src
 - `PagedCategory`: 페이지 상태와 API 요청 동기화
 - `InfiniteCategory`: sentinel 관찰 기반 페이지 증가 및 리스트 누적
 - `movieStore`: 검색어/현재 페이지 전역 상태 관리
-- `MovieList`: loading/error/success 상태 분기 렌더링
+- `MovieList`: loading / error / success 상태 분기 렌더링
 - `AbortController`: 이전 요청 취소로 stale 응답 반영 방지
 
 ## 트러블슈팅
@@ -138,10 +138,10 @@ npm run preview
 npm run lint
 ```
 
-## 검증
+## 검증 (2026-02-11)
 
 - `npm run lint` 통과
-- 배포 전 권장 확인: `npm run build` 통과
+- `npm run build` 통과
 
 ## 향후 개선 계획
 
@@ -152,6 +152,7 @@ npm run lint
 
 ## Contact
 
+- GitHub: https://github.com/joon6390
 - Email: joon6390@naver.com
 
 ## Credits
