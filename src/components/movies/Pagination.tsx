@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { useMovieStore } from "../../store/movieStore";
 import { twMerge } from "tailwind-merge";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 type Props = {
   totalPages: number;
@@ -15,8 +15,13 @@ type Props = {
 export default function Pagination({ totalPages }: Props) {
   const currentPage = useMovieStore((state) => state.currentPage);
   const setCurrentPages = useMovieStore((state) => state.setCurrentPages);
+  const prevPageRef = useRef(currentPage);
 
   useEffect(() => {
+    if (prevPageRef.current === currentPage) return;
+
+    prevPageRef.current = currentPage;
+
     document
       .getElementById("movie-list-top")
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
