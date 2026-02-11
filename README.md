@@ -5,7 +5,7 @@ TMDB API 기반 영화 탐색 웹 애플리케이션입니다.
 
 ## 링크
 
-- Live Demo: 배포 예정 (URL 추가 예정)
+- Live Demo: https://github.com/joon6390/Joon-Netflix
 - GitHub: https://github.com/joon6390/Joon-Netflix
 
 ## 프로젝트 개요
