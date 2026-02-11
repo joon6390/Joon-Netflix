@@ -5,7 +5,7 @@ TMDB API 기반 영화 탐색 웹 애플리케이션입니다.
 
 ## 링크
 
-- Live Demo: https://github.com/joon6390/Joon-Netflix
+- Live Demo: https://joon-netflix.vercel.app/
 - GitHub: https://github.com/joon6390/Joon-Netflix
 
 ## 프로젝트 개요
@@ -137,6 +137,11 @@ npm run build
 npm run preview
 npm run lint
 ```
+
+## 검증
+
+- `npm run lint` 통과
+- 배포 전 권장 확인: `npm run build` 통과
 
 ## 향후 개선 계획
 
